@@ -1,0 +1,58 @@
+QUESTÃO 1-  o valor da variável SOMA será 91
+
+QUESTÃO 2-  
+
+import java.util.Scanner;
+
+public class Fibonacci {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite um número: ");
+        int numero = input.nextInt();
+        int anterior = 0;
+        int atual = 1;
+        boolean pertence = false;
+
+        while (atual <= numero) {
+            if (atual == numero) {
+                pertence = true;
+                break;
+            }
+            int proximo = anterior + atual;
+            anterior = atual;
+            atual = proximo;
+        }
+
+        if (pertence) {
+            System.out.println(numero + " pertence à sequência de Fibonacci");
+        } else {
+            System.out.println(numero + " não pertence à sequência de Fibonacci");
+        }
+    }
+
+
+QUESTÃIO  03-
+a) A lógica é adicionar 2 ao número anterior. O próximo elemento é 9.
+b) A lógica é multiplicar por 2 o número anterior. O próximo elemento é 128.
+
+c) A lógica é adicionar 3 ao número anterior. O próximo elemento é 49.
+
+d) A lógica é elevar o número anterior ao quadrado. O próximo elemento é 100.
+
+e) A lógica é somar os dois números anteriores. O próximo elemento é 13.
+
+f) A lógica é adicionar 8 ao número anterior ou subtrair 1 do número anterior. O próximo elemento pode ser 20 ou 16.
+
+QUESTÃO 04-
+ o carro estará mais próximo de Ribeirão Preto, a apenas 6 km de distância, enquanto o caminhão estará a 94 km de distância.
+ 
+QUESTÃO 05-
+String str = "hello world";
+String reversed = "";
+
+for (int i = str.length() - 1; i >= 0; i--) {
+    reversed += str.substring(i, i + 1);
+}
+
+System.out.println(reversed); // imprime "dlrow olleh"
+
